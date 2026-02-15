@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    /* =========================
+       Target & Module
+    ========================== */
+    "target": "ES2022",
+    "module": "NodeNext", //Top-level await only allowed when module is ES2022 / node16 / nodenext
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+
+    /* =========================
+       Output
+    ========================== */
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "removeComments": true,
+
+    /* =========================
+       Strictness (Important)
+    ========================== */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* =========================
+       Interop & Imports
+    ========================== */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    /* =========================
+       Speed Optimizations
+    ========================== */
+    "skipLibCheck": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+
+    /* =========================
+       Misc
+    ========================== */
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
